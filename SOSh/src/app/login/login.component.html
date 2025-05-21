@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div class="p-5 bg-light rounded shadow">
+    <form class="form" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <div class="form-title"><span>sign in to your</span></div>
+      <div class="title-2"><span>SPACE</span></div>
+      <div class="input-container">
+        <input
+          type="text"
+          ngModel
+          name="userName"
+          id="userName"
+          placeholder="Enter your username"
+        />
+        <span> </span>
+      </div>
+
+      <section class="bg-stars">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+      </section>
+
+      <div class="input-container">
+        <input
+          class="input-pwd"
+          ngModel
+          name="userPassword"
+          id="userPassword"
+          type="password"
+          placeholder="Enter password"
+        />
+      </div>
+      <button type="submit" class="submit" value="Login">
+        <span class="sign-text">Sign in</span>
+      </button>
+
+      <p class="signup-link">
+        No account?
+        <a href="" class="up">Sign up!</a>
+      </p>
+    </form>
+  </div>
+</div>
