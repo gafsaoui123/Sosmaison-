@@ -52,4 +52,9 @@ export class UserViewMeComponent implements OnInit {
   changeIndex(index: number) {
     this.selectedProductIndex = index;
   }
+
+
+  changeIndex1(index: number) {
+    this.selectedProductIndex = index;
+  }
 }
